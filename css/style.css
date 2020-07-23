@@ -1,0 +1,134 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    padding: 5px;
+    width: 30%;
+    height: 30%;
+    line-height: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+
+
+html, body, section {
+    height: 100%;
+}
+  
+body {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+    text-align: center;
+    text-shadow: none;
+    background: #eeeeee;
+}
+  
+div {
+    display: flex;
+    flex-direction: column;
+}
+  
+.container {
+    display: flex;
+}
+
+.left-half {
+    background-color: #eeeeee;
+    flex: 4;
+}
+  
+.right-half {
+    background-color: #eeeeee;
+    flex: 1;
+    justify-content: normal;
+}
+
+.btn {
+    background-color: #72c3db;
+    color: #fff;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    margin: 10px;
+    width:50%;
+    -webkit-box-shadow: 0px 1px 0px #72c3da;
+    -moz-box-shadow: 0px 1px 0px #72c3da;
+    box-shadow: 0px 1px 0px #72c3da;
+}
+
+ul li:nth-child(1) {
+    background: #6f98ab;
+}
+ul li:nth-child(2), ul li:nth-child(4), ul li:nth-child(8) {
+    background: #2B8EAD;
+}
+ul li:nth-child(3), ul li:nth-child(5), ul li:nth-child(9) {
+    background: #2f454e;
+}
+ul li:nth-child(6),  ul li:nth-child(7) {
+    background: #BFBFBF;
+}
+.header-item {
+    color: black;
+    font-size:12px;
+}
+.footer {
+    color: black;
+    text-align: end;
+    padding-right: 10%;
+    font-size: 14px;
+}
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+    .right-half {
+        flex-direction: row;
+        justify-content: center;
+        flex: none;
+    }
+    .btn {
+        height: 35px;
+        width: 35%;
+    }
+    .header-item {
+        background: #333;
+        color: #fff;
+        text-shadow: none;
+        padding-bottom: 0;
+        margin: 0;
+    } 
+    .flex-item {
+        line-height: 40px;
+        width:100%;
+        font-size: 1em;
+        color: black;
+        text-shadow: none;
+    }
+    .flex-container {
+        flex-flow: column wrap;
+    }
+}
